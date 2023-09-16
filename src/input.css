@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-family: "Open Sans", sans-serif;
+@font-family: "Poppins", sans-serif;
+@font-family: "Roboto", sans-serif;
+@layer components {
+  .contact-icons {
+    @apply text-cusblue px-3 ml-7;
+  }
+  .contact-icon-text {
+    @apply text-cusdarkblue text-sm;
+  }
+  .contact-social-icon {
+    @apply w-9 h-9 rounded-full text-cusblue bg-white;
+  }
+  .header-label-slider {
+    @apply absolute ss:left-1/2 sm:left-1/3 md:left-1/2 bottom-5 w-3 h-3 border-[1px] border-white rounded-full bg-zinc-300 cursor-pointer shadow-2xl z-20;
+  }
+  .header-li {
+    @apply w-1/5 h-full float-left relative;
+  }
+  .header-li-h1 {
+    @apply absolute p-2 rounded-md text-white bg-gradient-to-r from-blue-700 to-slate-300 text-6xl font-roboto font-bold sm:text-4xl md:text-6xl;
+  }
+  .header-left-count {
+    @apply text-white border-l-2 border-white pl-5;
+  }
+  .header-left-num {
+    @apply font-roboto text-4xl font-semibold sm:text-xl lg:text-3xl;
+  }
+  .read-more-about-us {
+    @apply bg-cusblue py-3 px-6 mt-10 mb-8 text-justify font-opensans text-white inline-block rounded-3xl transition-colors duration-300 hover:bg-blue-800 hover:cursor-pointer;
+  }
+  .about-us-pic {
+    @apply w-1/2 ss:-bottom-20 absolute self-end ss:-left-3 ss:px-6 md:px-0 lg:top-60 lg:left-8 xl:top-80 xl:left-4;
+  }
+  /* start service section */
+  .service-icon {
+    @apply w-14 h-14 rounded-full bg-white text-cusblue justify-center items-center text-2xl inline-flex;
+  }
+  .service-title {
+    @apply mb-3 text-cusdarkblue font-roboto font-bold text-2xl;
+  }
+  .service-text {
+    @apply font-opensans text-textcolor text-justify;
+  }
+  .read-more-wrapper {
+    @apply inline-flex justify-start relative items-center cursor-pointer w-12 group-hover/hover:w-40 h-12 rounded-full transition-all duration-700 bg-white text-cusblue font-opensans group-hover/hover:[&>a]:left-14 group-hover/hover:[&>a]:opacity-100;
+  }
+  .read-more-wrapper-a {
+    @apply inline-flex left-0 opacity-0 text-textcolor justify-center transition-all duration-[1500ms] items-center whitespace-nowrap absolute text-sm;
+  }
+  /* start doctor section */
+  .doctor-section-wrapper {
+    @apply relative overflow-hidden rounded-lg;
+  }
+  .doctor-section-pic {
+    @apply relative duration-500 top-0 group-hover/hight:-top-8;
+  }
+  .doctor-description-wrapper {
+    @apply flex items-center flex-col bg-bglight relative py-4 h-24 gap-y-2 duration-500 group-hover/hight:-mt-16 group-hover/hight:h-44;
+  }
+  .doctor-name-description {
+    @apply font-roboto font-bold text-lg text-cusdarkblue;
+  }
+  .doctor-department-description {
+    @apply font-opensans text-cusblue pb-5;
+  }
+  .doctor-description-icons-wrapper {
+    @apply flex items-center gap-x-2 transition-opacity duration-500 opacity-0 group-hover/hight:opacity-100;
+  }
+  .doctor-section-icon {
+    @apply w-10 h-10 rounded-full bg-white text-cusblue justify-center items-center text-lg inline-flex transition-colors duration-300 hover:bg-cusblue hover:text-white;
+  }
+  /* end doctor section */
+
+  /* start global utilities */
+  .w-1200-container {
+    @apply flex container max-w-[1200px] flex-wrap items-center flex-col justify-center mt-36 ss:px-6 xl:px-0;
+  }
+  .ring-title {
+    @apply font-opensans text-textcolor shadow-sm inline-block ring-1 ring-sky-200 py-1 px-5 rounded-2xl;
+  }
+  .sections-h1 {
+    @apply font-roboto font-extrabold text-cusdarkblue my-5 ss:text-2xl md:text-5xl;
+  }
+  /* end global utilities */
+  /* start footer section */
+  .footer-address-icon {
+    @apply w-10 h-10 border-[1px] rounded-full cursor-pointer bg-transparent text-bglight transition-colors duration-500 justify-center items-center text-base inline-flex hover:bg-white hover:text-cusblue;
+  }
+  .footer-services {
+    @apply transition-all duration-200 cursor-pointer before:content-['\276f'] before:pr-3 hover:text-cusblue hover:scale-105;
+  }
+  /* end footer section */
+}

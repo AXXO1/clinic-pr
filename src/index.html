@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>main page</title>
+  </head>
+  <body>
+    <!-- start contact section -->
+    <div
+      class="flex justify-between items-center [&>div>i]:contact-icons bg-boxcolor h-12 font-opensans ss:fixed lg:sticky"
+    >
+      <div>
+        <i class="fas fa-map-marker-alt"></i>
+        <span class="contact-icon-text">123 Street, New York, USA</span>
+        <i class="far fa-clock"></i>
+        <span class="contact-icon-text">Mon - Fri : 09.00 AM - 09.00 PM</span>
+      </div>
+      <div class="flex items-center mr-16">
+        <i class="fas fa-phone-alt"></i>
+        <span class="contact-icon-text"> +012 345 6789</span>
+        <div class="ml-10 flex items-center gap-x-1.5">
+          <button class="contact-social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button class="contact-social-icon">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button class="contact-social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </button>
+          <button class="contact-social-icon">
+            <i class="fab fa-instagram"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- end contact section -->
+
+    <!-- start menu section -->
+    <nav class="bg-white border-gray-200 relative">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 font-opensans"
+      >
+        <a href="#" class="flex items-center text-cusblue gap-x-6">
+          <i class="fas fa-hospital text-4xl"></i>
+          <span
+            class="self-center text-3xl whitespace-nowrap font-roboto font-bold"
+            >Clinic</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div
+          class="hidden w-full md:block md:w-auto mr-10"
+          id="navbar-dropdown"
+        >
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Service</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+              >
+                Pages
+                <svg
+                  class="w-2.5 h-2.5 ml-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >Feature</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >Earnings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- end dropdown menu -->
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <div
+                class="bg-cusblue transition-colors duration-300 cursor-pointer right-0 py-6 top-0 px-6 absolute text-white hover:bg-blue-800 hidden 2xl:block"
+              >
+                <a
+                  href="#"
+                  class="py-2 p-10 md:hover:bg-transparent md:border-0 md:p-0"
+                  >Appointment</a
+                >
+                <span class="ml-2"><i class="fa fa-arrow-right"></i></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end menu section -->
+    <!-- start header section -->
+    <section
+      class="min-h-[300px] max-h-[1500px] bg-cusblue flex flex-col-reverse sm:flex-row relative"
+    >
+      <div
+        class="flex justify-center items-center relative flex-col ss:w-full sm:w-1/2"
+      >
+        <div class="ml-6">
+          <h1
+            class="font-roboto mt-10 sm:mt-0 text-white ss:text-[45px] sm:text-2xl md:text-4xl xl:text-6xl font-black p-3"
+          >
+            Good Health Is The Root Of All Heppiness
+          </h1>
+          <div
+            class="flex gap-x-24 ss:flex-col ss:gap-y-24 ss:mt-6 left-5 sm:gap-y-2 md:gap-y-6 md:mt-10 xl:flex-row xl:gap-y-0 xl:mt-28"
+          >
+            <div class="header-left-count">
+              <h2 class="header-left-num counter" data-count="123">0</h2>
+              <p class="font-opensans">Expert Doctors</p>
+            </div>
+            <div class="header-left-count">
+              <h2 class="header-left-num counter" data-count="1234">0</h2>
+              <p class="font-opensans">Medical Stuff</p>
+            </div>
+            <div class="header-left-count ss:mb-5 sm:mb-0">
+              <h2 class="header-left-num counter" data-count="12345">0</h2>
+              <p class="font-opensans">Total Patients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative ss:w-full sm:w-1/2">
+        <input
+          type="radio"
+          class="absolute invisible peer/chck1"
+          id="slide1"
+          checked
+        />
+        <label
+          class="header-label-slider ml-12 peer-checked/chck1:bg-cusblue"
+          for="slide1"
+        ></label>
+        <input type="radio" class="absolute invisible peer/chck2" id="slide2" />
+        <label
+          class="header-label-slider ml-16 peer-checked/chck2:bg-cusblue"
+          for="slide2"
+        ></label>
+        <input type="radio" class="absolute invisible peer/chck3" id="slide3" />
+        <label
+          class="header-label-slider ml-20 peer-checked/chck3:bg-cusblue"
+          for="slide3"
+        ></label>
+        <div
+          class="w-full h-full relative overflow-hidden peer-checked/chck:[&>ul]:left-0 peer-checked/chck2:[&>*ul]:-left-[100%] peer-checked/chck3:[&>ul]:-left-[200%]"
+        >
+          <ul
+            class="h-full w-[500%] transition-all duration-700 relative overflow-hidden"
+          >
+            <li class="header-li">
+              <div class="flex relative justify-center items-center">
+                <img src="../assets/img/carousel-1.jpg" alt="" />
+                <h1 class="header-li-h1">Cardiology</h1>
+              </div>
+            </li>
+            <li class="header-li">
+              <div class="flex relative justify-center items-center">
+                <img src="../assets/img/carousel-2.jpg" alt="" />
+                <h1 class="header-li-h1">Neurology</h1>
+              </div>
+            </li>
+            <li class="header-li">
+              <div class="flex relative justify-center items-center">
+                <img src="../assets/img/carousel-3.jpg" alt="" />
+                <h1 class="header-li-h1">Pulmonary</h1>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end header section -->
+    <!-- start About Us section -->
+    <div class="flex items-center flex-col mt-36">
+      <div class="grid ss:grid-cols-1 lg:grid-cols-2 gap-x-12">
+        <div class="flex flex-col relative ss:items-center lg:items-end">
+          <div class="w-3/4">
+            <img class="rounded-2xl" src="../assets/img/about-1.jpg" alt="" />
+          </div>
+          <div class="about-us-pic">
+            <img
+              class="h-auto border-[15px] border-white rounded-xl"
+              src="../assets/img/about-2.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="relative ss:mt-32 lg:mt-0 ss:px-7 xl:px-0">
+          <p class="ring-title">About Us</p>
+          <h1
+            class="font-roboto font-extrabold text-cusdarkblue mt-12 text-justify text-4xl md:text-5xl"
+          >
+            Why You Should Trust Us? <br />Get Know About Us!
+          </h1>
+          <p
+            class="mt-8 text-justify font-opensans text-textcolor whitespace-pre-line"
+          >
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+            lorem sit clita duo justo magna dolore erat amet
+          </p>
+          <p
+            class="mt-5 text-justify font-opensans text-textcolor whitespace-pre-line"
+          >
+            Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet
+            est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy
+            clita sit at, sed sit sanctus dolor eos
+          </p>
+          <ul
+            class="mt-7 text-justify font-opensans text-textcolor [&>li>i]:text-cusblue"
+          >
+            <li><i class="far fa-check-circle pr-5"></i>Quality health care</li>
+            <li class="py-3">
+              <i class="far fa-check-circle pr-5"></i>Only Qualified Doctors
+            </li>
+            <li>
+              <i class="far fa-check-circle pr-5"></i>Medical Research
+              Professionals
+            </li>
+          </ul>
+          <div class="read-more-about-us">
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end About Us section -->
+
+    <!-- start services section -->
+    <div class="w-1200-container">
+      <p class="ring-title">Services</p>
+      <h1 class="sections-h1">Health Care Solutions</h1>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 mt-5">
+        <div
+          class="flex items-start justify-center bg-bglight max-w-[400px] flex-col gap-y-5 p-12 overflow-hidden rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105 group/hover"
+        >
+          <div class="service-icon">
+            <i class="fa fa-heartbeat"></i>
+          </div>
+          <h4 class="service-title">Cardiology</h4>
+          <p class="service-text">
+            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
+            diam stet diam sed stet.
+          </p>
+          <div class="read-more-wrapper">
+            <i class="fa fa-plus ml-4"></i>
+            <a class="read-more-wrapper-a" href="#">Read More</a>
+          </div>
+        </div>
+        <div
+          class="flex items-start justify-center bg-bglight max-w-[400px] flex-col gap-y-5 p-12 overflow-hidden rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105 group/hover"
+        >
+          <div class="service-icon">
+            <i class="fa fa-x-ray"></i>
+          </div>
+          <h4 class="service-title">Pulmonary</h4>
+          <p class="service-text">
+            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
+            diam stet diam sed stet.
+          </p>
+          <div class="read-more-wrapper">
+            <i class="fa fa-plus ml-4"></i>
+            <a class="read-more-wrapper-a" href="#">Read More</a>
+          </div>
+        </div>
+        <div
+          class="flex items-start justify-center bg-bglight max-w-[400px] flex-col gap-y-5 p-12 overflow-hidden rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105 group/hover"
+        >
+          <div class="service-icon">
+            <i class="fa fa-brain"></i>
+          </div>
+          <h4 class="service-title">Neurology</h4>
+          <p class="service-text">
+            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
+            diam stet diam sed stet.
+          </p>
+          <div class="read-more-wrapper">
+            <i class="fa fa-plus ml-4"></i>
+            <a class="read-more-wrapper-a" href="#">Read More</a>
+          </div>
+        </div>
+        <div
+          class="flex items-start justify-center bg-bglight max-w-[400px] flex-col gap-y-5 p-12 overflow-hidden rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105 group/hover"
+        >
+          <div class="service-icon">
+            <i class="fa fa-wheelchair"></i>
+          </div>
+          <h4 class="service-title">Orthopedics</h4>
+          <p class="service-text">
+            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
+            diam stet diam sed stet.
+          </p>
+          <div class="read-more-wrapper">
+            <i class="fa fa-plus ml-4"></i>
+            <a class="read-more-wrapper-a" href="#">Read More</a>
+          </div>
+        </div>
+        <div
+          class="flex items-start justify-center bg-bglight max-w-[400px] flex-col gap-y-5 p-12 overflow-hidden rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105 group/hover"
+        >
+          <div class="service-icon">
+            <i class="fa fa-tooth"></i>
+          </div>
+          <h4 class="service-title">Dental Surgery</h4>
+          <p class="service-text">
+            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
+            diam stet diam sed stet.
+          </p>
+          <div class="read-more-wrapper">
+            <i class="fa fa-plus ml-4"></i>
+            <a class="read-more-wrapper-a" href="#">Read More</a>
+          </div>
+        </div>
+        <div
+          class="flex items-start justify-center bg-bglight max-w-[400px] flex-col gap-y-5 p-12 overflow-hidden rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105 group/hover"
+        >
+          <div class="service-icon">
+            <i class="fa fa-vials"></i>
+          </div>
+          <h4 class="service-title">Laboratory</h4>
+          <p class="service-text">
+            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
+            diam stet diam sed stet.
+          </p>
+          <div class="read-more-wrapper">
+            <i class="fa fa-plus ml-4"></i>
+            <a class="read-more-wrapper-a" href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end services section -->
+    <!-- start why choose us section -->
+    <section>
+      <div class="flex items-center mt-36 ss:px-3 bg-cusblue">
+        <div class="grid lg:grid-cols-2">
+          <div
+            class="flex flex-col justify-center items-start gap-y-5 py-14 ss:ml-0 ss:px-2 md:ml-16 md:px-0"
+          >
+            <p
+              class="text-white ring-1 py-1 px-5 ring-white font-opensans rounded-2xl"
+            >
+              Feature
+            </p>
+            <h1 class="text-white font-roboto font-bold text-3xl">
+              Why Choose Us
+            </h1>
+            <p class="font-opensans text-white">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+              lorem sit clita duo justo erat amet
+            </p>
+            <div class="flex flex-row">
+              <div class="grid grid-cols-2 gap-x-12 xl:gap-x-28 gap-y-7">
+                <div class="flex shrink gap-x-7">
+                  <div class="service-icon text-xl">
+                    <i class="fa fa-user-md"></i>
+                  </div>
+                  <div>
+                    <p class="font-opensans text-white">Experience</p>
+                    <h5 class="font-roboto font-bold text-white text-xl">
+                      Doctors
+                    </h5>
+                  </div>
+                </div>
+                <div class="flex shrink gap-x-7">
+                  <div class="service-icon text-xl">
+                    <i class="fa fa-check"></i>
+                  </div>
+                  <div>
+                    <p class="font-opensans text-white">Quality</p>
+                    <h5 class="font-roboto font-bold text-white text-xl">
+                      Services
+                    </h5>
+                  </div>
+                </div>
+                <div class="flex shrink gap-x-7">
+                  <div class="service-icon text-xl">
+                    <i class="fa fa-comment-medical"></i>
+                  </div>
+                  <div>
+                    <p class="font-opensans text-white">positive</p>
+                    <h5 class="font-roboto font-bold text-white text-xl">
+                      Consultation
+                    </h5>
+                  </div>
+                </div>
+                <div class="flex shrink gap-x-7">
+                  <div class="service-icon text-xl">
+                    <i class="fa fa-headphones"></i>
+                  </div>
+                  <div>
+                    <p class="font-opensans text-white">24 Hourse</p>
+                    <h5 class="font-roboto font-bold text-white text-xl">
+                      Support
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ss:min-h-[400px] xl:min-h-[600px]">
+            <div class="relative h-full">
+              <img
+                class="absolute object-cover w-full h-full"
+                src="../assets/img/feature.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end why choose us section -->
+    <!-- start doctors section -->
+    <div class="w-1200-container">
+      <p class="ring-title">Doctors</p>
+      <h1 class="sections-h1">Our Experience Doctors</h1>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-5 mt-5">
+        <div class="doctor-section-wrapper group/hight">
+          <div class="overflow-hidden">
+            <img
+              class="doctor-section-pic"
+              src="../assets/img/team-1.jpg"
+              alt=""
+            />
+            <div class="doctor-description-wrapper">
+              <h5 class="doctor-name-description">Doctor Name</h5>
+              <p class="doctor-department-description">Department</p>
+              <div class="doctor-description-icons-wrapper">
+                <a class="doctor-section-icon" href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="doctor-section-icon" href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="doctor-section-icon" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="doctor-section-wrapper group/hight">
+          <div class="overflow-hidden">
+            <img
+              class="doctor-section-pic"
+              src="../assets/img/team-2.jpg"
+              alt=""
+            />
+            <div class="doctor-description-wrapper">
+              <h5 class="doctor-name-description">Doctor Name</h5>
+              <p class="doctor-department-description">Department</p>
+              <div class="doctor-description-icons-wrapper">
+                <a class="doctor-section-icon" href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="doctor-section-icon" href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="doctor-section-icon" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="doctor-section-wrapper group/hight">
+          <div class="overflow-hidden">
+            <img
+              class="doctor-section-pic"
+              src="../assets/img/team-3.jpg"
+              alt=""
+            />
+            <div class="doctor-description-wrapper">
+              <h5 class="doctor-name-description">Doctor Name</h5>
+              <p class="doctor-department-description">Department</p>
+              <div class="doctor-description-icons-wrapper">
+                <a class="doctor-section-icon" href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="doctor-section-icon" href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="doctor-section-icon" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="doctor-section-wrapper group/hight">
+          <div class="overflow-hidden">
+            <img
+              class="doctor-section-pic"
+              src="../assets/img/team-4.jpg"
+              alt=""
+            />
+            <div class="doctor-description-wrapper">
+              <h5 class="doctor-name-description">Doctor Name</h5>
+              <p class="doctor-department-description">Department</p>
+              <div class="doctor-description-icons-wrapper">
+                <a class="doctor-section-icon" href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="doctor-section-icon" href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="doctor-section-icon" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end doctors section -->
+    <!-- start appointment section -->
+    <section>
+      <div class="flex items-center mt-36 ss:px-3 flex-col md:flex-row">
+        <div class="grid lg:grid-cols-2">
+          <div
+            class="flex flex-col justify-center items-start gap-y-8 my-14 lg:px-5"
+          >
+            <p class="ring-title">Appointment</p>
+            <h1 class="text-cusdarkblue font-roboto font-bold text-3xl">
+              Make An Appointment To Visit Our Doctors
+            </h1>
+            <p class="font-opensans text-textcolor">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+              lorem sit clita duo justo magna dolore erat amet
+            </p>
+            <div
+              class="flex items-center shrink-0 h-40 w-full rounded-lg gap-x-7 bg-bglight"
+            >
+              <div class="service-icon text-xl ml-16">
+                <i class="fa fa-phone-alt"></i>
+              </div>
+              <div>
+                <p class="font-opensans text-textcolor">Call Us Now</p>
+                <h5 class="font-roboto font-bold text-cusdarkblue text-xl mt-2">
+                  +012 345 6789
+                </h5>
+              </div>
+            </div>
+            <div
+              class="flex items-center shrink-0 h-40 w-full rounded-lg gap-x-7 bg-bglight"
+            >
+              <div class="service-icon text-xl ml-16">
+                <i class="fa fa-envelope-open"></i>
+              </div>
+              <div>
+                <p class="font-opensans text-textcolor">Mail Us Now</p>
+                <h5 class="font-roboto font-bold text-cusdarkblue text-xl mt-2">
+                  info@example.com
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-bglight items-center flex-wrap flex justify-center my-14 pl-5 rounded-xl overflow-hidden"
+          >
+            <form action="">
+              <div
+                class="flex flex-wrap items-center justify-center p-9 flex-col"
+              >
+                <div class="grid grid-cols-2 gap-5">
+                  <input
+                    class="rounded-lg ss:col-span-2 md:col-span-1 h-14 border-0 focus:ring-2 text-textcolor"
+                    type="text"
+                    placeholder="Your Name ..."
+                  />
+                  <input
+                    class="rounded-lg ss:col-span-2 md:col-span-1 h-14 border-0 focus:ring-2 text-textcolor"
+                    type="email"
+                    placeholder="Your Mail ..."
+                  />
+                  <input
+                    class="rounded-lg ss:col-span-2 md:col-span-1 h-14 border-0 focus:ring-2 text-textcolor"
+                    type="tel"
+                    placeholder="Your Phone ..."
+                  />
+                  <div class="relative ss:col-span-2 md:col-span-1">
+                    <select
+                      class="rounded-lg w-full h-14 border-0 focus:ring-2 text-textcolor"
+                      name=""
+                      id=""
+                    >
+                      <option selected>Choose Doctor</option>
+                      <option value="option1">Doctor 1</option>
+                      <option value="option2">Doctor 2</option>
+                      <option value="option3">Doctor 3</option>
+                    </select>
+                  </div>
+                  <input
+                    class="rounded-lg ss:col-span-2 md:col-span-1 h-14 border-0 focus:ring-2 text-textcolor"
+                    type="date"
+                  />
+                  <input
+                    class="rounded-lg ss:col-span-2 md:col-span-1 h-14 border-0 focus:ring-2 text-textcolor"
+                    type="time"
+                  />
+                  <div class="relative ss:col-span-2 md:col-span-2">
+                    <textarea
+                      class="border-0 w-full outline-none rounded-lg overflow-hidden focus:ring-2 text-textcolor"
+                      rows="5"
+                      cols="47"
+                      placeholder="Describe your problem ..."
+                    ></textarea>
+                  </div>
+                  <button
+                    class="text-white ss:col-span-2 md:col-span-2 transition-colors duration-500 bg-cusblue py-4 rounded-lg hover:bg-blue-800"
+                  >
+                    Book Appointment
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end appointment section -->
+    <footer>
+      <div
+        class="flex items-start bg-cusdarkblue relative w-full mt-44 px-10 pt-10 pb-20"
+      >
+        <div
+          class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 lg:p-10"
+        >
+          <div class="flex flex-col gap-y-5 text-bglight">
+            <h5 class="font-roboto font-bold mb-4 text-xl">Address</h5>
+            <ul>
+              <li>
+                <i class="fa fa-map-marker-alt"></i
+                ><span class="ml-4 font-opensans"
+                  >123 Street, New York, USA</span
+                >
+              </li>
+              <li class="py-3">
+                <i class="fa fa-phone-alt"></i
+                ><span class="ml-4 font-opensans">+012 345 67890</span>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i
+                ><span class="ml-4 font-opensans">info@example.com</span>
+              </li>
+            </ul>
+            <div class="flex gap-x-2">
+              <div class="footer-address-icon">
+                <a href=""><i class="fab fa-twitter"></i></a>
+              </div>
+              <div class="footer-address-icon">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+              </div>
+              <div
+                class="footer-address-icon hover:bg-white hover:text-red-600"
+              >
+                <a href=""><i class="fab fa-youtube"></i></a>
+              </div>
+              <div class="footer-address-icon">
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-5 lg:ml-10 text-bglight">
+            <h5 class="font-roboto font-bold mb-4 text-xl">Services</h5>
+            <ul class="font-opensans text-bglight flex flex-col gap-y-3">
+              <li class="footer-services"><a href="#">Cardiology</a></li>
+              <li class="footer-services"><a href="#">Pulmonary</a></li>
+              <li class="footer-services"><a href="#">Neurology</a></li>
+              <li class="footer-services"><a href="#">Orthopedics</a></li>
+              <li class="footer-services"><a href="#">Laboratory</a></li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-5 text-bglight">
+            <h5 class="font-roboto font-bold mb-4 text-xl">Quick Links</h5>
+            <ul class="font-opensans text-bglight flex flex-col gap-y-3">
+              <li class="footer-services"><a href="#">About Us</a></li>
+              <li class="footer-services"><a href="#">Contact Us</a></li>
+              <li class="footer-services"><a href="#">Our services</a></li>
+              <li class="footer-services">
+                <a href="#">Term's & Condition</a>
+              </li>
+              <li class="footer-services"><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-5 text-bglight">
+            <h5 class="font-roboto font-bold mb-4 text-xl">Services</h5>
+            <p class="font-opensans">
+              Dolor amet sit justo amet elitr clita ipsum elitr est.
+            </p>
+            <div class="relative">
+              <input
+                class="border-0 w-full py-4 rounded-xl text-textcolor"
+                type="email"
+                placeholder="Your Email ..."
+              />
+              <button
+                class="bg-cusblue text-white p-3 rounded-xl absolute z-10 right-1.5 top-1 transition-colors duration-500 hover:bg-blue-800"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+          <div
+            class="absolute py-3 left-0 text-center text-sm flex items-center justify-center w-full bottom-0 mt-36 border-t-[1px] border-textcolor text-bglight"
+          >
+            <div>
+              <a href="#" class="underline underline-offset-3"
+                >© Your Site Name</a
+              >, All Right Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end services section -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".counter").each(function () {
+          var $this = $(this);
+          var countTo = $this.attr("data-count");
+          // console.log(countTo);
+          $({ countNum: $this.text() }).animate(
+            {
+              countNum: countTo,
+            },
+            {
+              duration: 10800,
+              easing: "linear",
+              step: function () {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function () {
+                $this.text(this.countNum);
+              },
+            }
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
